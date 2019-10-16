@@ -8,15 +8,34 @@ import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 
+import { HomeComponent } from './view/home/home.component';
+import { BuyComponent } from './view/buy/buy.component';
+import { ProductComponent } from './view/product/product.component';
+import { RegisterProductComponent } from './view/register-product/register-product.component';
+import { ToolbarComponent } from './component/toolbar/toolbar.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    BuyComponent,
+    ProductComponent,
+    RegisterProductComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

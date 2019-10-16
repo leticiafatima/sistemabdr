@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+    color: #028090;
+}
+
+.spaceButton {
+  margin-right: 1%;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.colorToobar {
+  background-color: #f0f3bd !important;
+  height: 80px;
+  width: 100vw;
+}
+
+.config {
+    padding-top: 1%;
+}
+
+.fontLogo {
+  font-family: Quicksand;
+  font-size: 35px;
+  margin-left: 1%;
+  color: #028090;
+}
+
+.colorButtonFindPet {
+  background-color: #a87372;
+  color: white;
+}
+
+.colorButtonRegisterPet {
+  background-color: #00a896;
+  color: white;
+}
+
+@media only screen and (max-width: 360px) {
+  .fontLogo {
+    margin-right: 3% !important;
+  }
+
+  .colorButtonFindPet{
+    padding: 1px !important;
+    font-size: 11px !important;
+  }
+
+  .colorButtonRegisterPet {
+    padding: 1px !important;
+    font-size: 11px !important;
+  }
+}
