@@ -1,1 +1,20 @@
-<p>product works!</p>
+<app-toolbar></app-toolbar>
+
+<div class="row content">
+    <ng-container *ngFor="let product of products | async">
+        <div class="col-sm-2 margin">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{product.nome}}</mat-card-title>
+                    <mat-card-subtitle>Preço: R$ {{product.preco}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="{{product.imagem}}" alt="Foto Produto" class="imageProduct">
+                <mat-card-content>
+                    <p>
+                        Descrição: {{product.descricao}}
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </ng-container>
+</div>

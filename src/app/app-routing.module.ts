@@ -1,15 +1,19 @@
+import { RegisterProductComponent } from './view/register-product/register-product.component';
+import { RequestsComponent } from './view/requests/requests.component';
+import { ProductComponent } from './view/product/product.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './view/home/home.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'product', pathMatch: 'full' },
 
   {
     path: '',
     children: [
-      { path: 'home', component: HomeComponent }
+      { path: 'product', component: ProductComponent },
+      { path: 'requests', component: RequestsComponent },
+      { path: 'addProduct', component: RegisterProductComponent}
     ]
   },
 ];

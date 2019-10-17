@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-product',
@@ -6,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
+  public products: Observable<any[]>;
 
-  constructor() { }
-
+  constructor(db: AngularFirestore) {
+    this.products = db.collection('/product').valueChanges();
+  }
+  
   ngOnInit() {
   }
 

@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: #028090;
+    color: #353535;
 }
 
 .spaceButton {
@@ -12,7 +12,7 @@ a {
 }
 
 .colorToobar {
-  background-color: #f0f3bd !important;
+  background-color: #2EC4B6 !important;
   height: 80px;
   width: 100vw;
 }
@@ -25,16 +25,16 @@ a {
   font-family: Quicksand;
   font-size: 35px;
   margin-left: 1%;
-  color: #028090;
+  color: #353535;
 }
 
-.colorButtonFindPet {
-  background-color: #a87372;
+.colorButtonProduct {
+  background-color: #353535;
   color: white;
 }
 
-.colorButtonRegisterPet {
-  background-color: #00a896;
+.colorButtonRequests {
+  background-color: #353535;
   color: white;
 }
 
@@ -43,12 +43,12 @@ a {
     margin-right: 3% !important;
   }
 
-  .colorButtonFindPet{
+  .colorButtonProduct{
     padding: 1px !important;
     font-size: 11px !important;
   }
 
-  .colorButtonRegisterPet {
+  .colorButtonRequests {
     padding: 1px !important;
     font-size: 11px !important;
   }
