@@ -11,10 +11,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
 
-import { HomeComponent } from './view/home/home.component';
 import { ProductComponent } from './view/product/product.component';
 import { RegisterProductComponent } from './view/register-product/register-product.component';
-import { RequestsComponent } from './view/requests/requests.component';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -36,11 +34,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ProductComponent,
     RegisterProductComponent,
     ToolbarComponent,
-    RequestsComponent
   ],
   imports: [
     BrowserModule,
